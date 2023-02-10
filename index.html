@@ -1,106 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./app.css">
-    <!-- <link rel="stylesheet" href="style1.css"> -->
-
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="navigation">
-                <div class="logo">
-                    <h1>Blue</h1>
-                </div>
-                <div class="links">
-                    <li><a href="blue.html">HOME</a></li>
-                    <li><a href="blue1.html">ABOUT</a></li>
-                    <li><a href="blue2.html">BLUE ARTIC INVESTMENTS</a></li>
-                    <li><a href="blue3.html">FINANCIAL LOANS</a></li>
-                    <li><a href="blue4.html">CONTACT US</a></li>
-                </div>
+  <head>
+    <title>BLUE ARTIC COMPANY</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+        <div class="main">
+          <div class="navbar">
+            <div class="icon">
+              <h2 class="ICON1">THE BLUE ARTIC COMPANY</h2>
             </div>
-        </nav>
-    </header>
 
-    <div class="hero">
-        <div class="">
-            <div class="landing">
-                <div class="col-6">
-                    <div class="box">
-                        <div class="">
-                            <div class="inner-box">
-                                <p>
-                            NOTE:  Dear customer, our company is committed to serving our esteemed customers based on trust and loyalty.For that reason, it requires you to pay a customer commitment fee of Ksh.296 to PAYBILL NUMBER<b>200999</b> ACCOUNT NO <b>0013060081597</b>.<br> Procedures are as follows:
-                                    <div class="">
-                                        <li>Go to Mpesa</li>
-                                        <li>Lipa na Mpesa</li>
-                                        <li>Pay Bill</li>
-                                        <li>business no: 200999</li>
-                                        <li>Account no:  0013060081597</li>
-                                        <li>Enter Amount: Ksh.296</li>
-                                        <li>Enter  Your Mpesa Pin.</li>
-                                    </div>
-                                </p>
-                            
-                        </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="">
-                        <div class="">
-                            <div class="calculator">
-                                <h2> Get your reliable loan amount today here</h2>
-                                <label for="amount">Principal Amount</label>
-                                <br>
-                                <input type="number" placeholder="Enter amount to loan" id="Amount">
-                                <br>
-                                <label for="Rate">Rate%</label>
-                                <br>
-                                <input type="number" placeholder="Enter Rate" id="Rate">
-                                <br>
-                                <label for="time">Time</label>
-                                <br>
-                                <input type="number" placeholder="Enter Time" id="Time">
-                                <br>
-                                <button onclick="answer()">Calculate</button>
-                                <p>Total Interest:<span id="interest"></span></p>
-                                <p>Total Value:<span id="totalAmount"></span></p>
-                            </div>
-                            
-
-                        </div>
-                    </div>
-                </div>
+            <div class="menu">
+              <ul>
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="blue1.hTml">ABOUT</a></li>
+                  <li><a href="blue2.html">BLUE ARTIC INVESTMENTS</a></li>
+                  <li><a href="blue3.html">FINANCIAL LOANS</a></li>
+                  <li><a href="blue4.html">CONTACT US</a></li>
+              </ul>
             </div>
+            <div class="search">
+              <input class="srch" type="search" name="" placeholder="type to text">
+              <href="#"> <button class="button">search</button>"</a>
+            </div>
+          </div>
+          <div class="content">
+            <h1><span>The Blue Artic</span> <br><span>Investment</span> <br><span>Company</span></h1>
+            <p class="par">The Blue Artic Company is a bridge to your finacial goals. Invest in us today as we invest in you.<br>Remember as The Blue Artic Investment Company we care for your future.</p>
+
+                <button class="cn"><a href="#">JOIN US</a></button>
+
+                <div class="form">
+                  <h2>Login Here</h2>
+                  <input type="email" name="email" placeholder="Enter Email Here">
+                  <input type="password" name="" placeholder="Enter password Here">
+                  <button class="button1"><a href="#">Login</a></button>
+                  <p class="link"> Don't have an account?</p><br>
+                  <a href="#">Sign up </a> here</a></p>
+                  <p class="liw">Log in with</p>
+                  </p>
+                </div>
+          </div>
         </div>
-    </div>
-    <script>
-        function answer()
-        {
-            var amt = document.querySelector("#Amount");
-            var rate = document.querySelector("#Rate");
-            var time = document.querySelector("#Time");
-
-            var interestDis = document.querySelector("#interest");
-            var totalDis = document.querySelector("#totalAmount");
-
-            var interest, total;
-
-            interest = eval(amt.value) * eval(rate.value) * eval(time.value)
-            total = eval(amt.value) + interest
-
-
-            interestDis.innerHTML = " Ksh "  + interest
-            totalDis.innerHTML = " Ksh "  + total
-
-        }
-    </script>
-</body>
+  </body>
 </html>
