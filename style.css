@@ -14,7 +14,7 @@ body{
 
 .main {
      width: 100%;
-     background: linear-gradient(to top, url(BACK1.jpg);
+     background: linear-gradient: url(BACK1.jpg);
      background-position: center;
      background-size: cover;
      height: 109vh;
